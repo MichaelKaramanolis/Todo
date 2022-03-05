@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// import Header from './components/Header';
+// import Counter from './components/Counter';
+// import Form from './components/Form';
+// import UseEf from './components/UseEf';
+// import Seconds from './components/Seconds';
+import Search from './components/Search'
+
+
+
+class App extends React.Component {
+    render() {
+        return (
+            <div className='ui grid container center aligned'>
+                <div className='column eight wide'>
+                    <Search  />
+                </div>
+            </div>
+        )
+    };
 }
 
 export default App;
